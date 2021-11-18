@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paz1c_fx.MainController">
+    <children>
+        <BorderPane prefHeight="800.0" prefWidth="1200.0">
+            <left>
+                <VBox prefHeight="743.0" prefWidth="73.0" style="-fx-background-color: #6b60be;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="predajca" mnemonicParsing="false" onAction="#handlerPredajca" prefHeight="60.0" prefWidth="100.0" stylesheets="@../../../styling/styling.css" text="Predajca" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold" size="13.0" />
+                            </font></Button>
+                        <Button fx:id="veduci" mnemonicParsing="false" onAction="#hendlerVeduci" prefHeight="60.0" prefWidth="100.0" stylesheets="@../../../styling/styling.css" text="Veduci" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold" size="13.0" />
+                            </font></Button>
+                        <Button id="buttonf" fx:id="Skladnik" mnemonicParsing="false" onAction="#hendlerSkladnik" prefHeight="60.0" prefWidth="100.0" stylesheets="@../../../styling/styling.css" text="Skladník" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold" size="13.0" />
+                            </font></Button>
+                        <Button fx:id="Admin" mnemonicParsing="false" onAction="#hendlerAdmin" prefHeight="60.0" prefWidth="100.0" stylesheets="@../../../styling/styling.css" text="Admin" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold" size="13.0" />
+                            </font></Button>
+                    </children>
+                </VBox>
+            </left>
+            <top>
+                <HBox prefHeight="57.0" prefWidth="1200.0" style="-fx-background-color: #4e448d;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="Uctovnictvo" textFill="#bdd9a7">
+                            <font>
+                                <Font name="Corbel Bold" size="33.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="7.0" />
+                            </HBox.margin>
+                        </Label>
+                  <Label text="Admin" textFill="#c9c9c9">
+                     <HBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="12.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </HBox>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
